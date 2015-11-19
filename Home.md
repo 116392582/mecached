@@ -14,6 +14,6 @@ Your friendly neighborhood memory cache daemon.
 
 ### Maintenance
 
-### Developmena
+### Development
 
  * [[DevelopmentRepos]]

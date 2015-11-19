@@ -1,28 +1,28 @@
-# Memcached 1.4.24 Release Notes
+### Memcached 1.4.24 Release Notes
 
 Date: 2015-4-25
 
-## Download
+### Download
 
 Download Link:
 
 http://www.memcached.org/files/memcached-1.4.24.tar.gz
 
 
-## Overview
+### Overview
 
 Bugfix release to replace 1.4.23. If you tried 1.4.23, please try this version instead. I apologize for any frustrations from the .23 release. If you see further issues, please report them quickly and we will look into them.
 
-## Fixes
+### Fixes
 
   * relax timing glitch in the lru maintainer test
   * fix major off by one issue
 
-## New Features
+### New Features
 
 Please see: https://code.google.com/p/memcached/wiki/ReleaseNotes1423 for the changes new to 1.4.23, as they were significant.
 
-## Contributors
+### Contributors
 
 The following people contributed to this release since 1.4.23.
 
