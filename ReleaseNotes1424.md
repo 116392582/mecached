@@ -35,7 +35,7 @@ which doesn't necessarily reflect how significant each change was.
 For details on what led up into a branch, either grab the git repo and
 look at the output of `git log 1.4.23..1.4.24` or use a web view.
 
-  * Repo list:  http://code.google.com/p/memcached/wiki/DevelopmentRepos
+  * Repo list:  https://github.com/memcached/memcached/wiki/DevelopmentRepos
   * Web View: http://github.com/memcached/memcached/commits/1.4.24
 
 ```
