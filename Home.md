@@ -2,6 +2,8 @@
 
 Your friendly neighborhood memory cache daemon.
 
+*note* The official wiki is slowly being ported over from [google code](https://code.google.com/p/memcached/wiki/NewStart), please check there if you can't find something here. The information there may be outdated.
+
 ### About
 
  * [[Overview]]
