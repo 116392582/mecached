@@ -21,7 +21,7 @@ Memcached is an in-memory key-value store for small arbitrary data (strings, obj
 
 *Memcached is simple yet powerful*. Its simple design promotes quick deployment, ease of development, and solves many problems facing large data caches. Its API is available for most popular languages.
 
-See the [http://memcached.org/about](memcached.org about page) for a brief overview.
+See the [memcached.org about page](http://memcached.org/about) for a brief overview.
 
 ### How Does It Work?
 
