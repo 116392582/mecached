@@ -27,7 +27,7 @@ to the codebase that has helped scale many companies.
   * UDP/TCP can be disabled by setting their port to 0
   * Can set the listen backlog on the commandline (-b)
 
-=== Stats ===
+#### Stats
 
 Handful of new stats.
 
@@ -48,7 +48,7 @@ you would see 86400 as the time.
 - missing key debugging.
 - tail repair.
 
-=== tail repair ===
+#### tail repair
 
 Tail repair is an important stability fix, and is worth repeating here.
 

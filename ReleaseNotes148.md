@@ -37,7 +37,7 @@ prevent it from getting expired early.
 
 ### New Features
 
-=== Touch Commands ===
+#### Touch Commands
 
 Binary Touch/GAT commands were backported from 1.6. New GATK/GATKQ commands
 were added for completeness. Finally, an Ascii protocol `touch` command was
@@ -51,7 +51,7 @@ it to 15 minutes. With touch, you can do that.
 The binary protocol also adds GAT commands (Get And Touch), which allow you to
 fetch an item and simultaneously update its expiration time.
 
-=== Fast Connection Limit Handling ===
+#### Fast Connection Limit Handling
 
 A new option, `-o`, has appeared! With -o new, experimental, or highly
 specific options are given full names. The first of which is `maxconns_fast`
@@ -76,7 +76,7 @@ similar to how MySQL operates, whereas the default is similar to Apache.
 It is experimental as it is unknown how clients will handle this change.
 Please help test and report any issues to upstream client maintainers!
 
-=== Internal Hash Table ===
+#### Internal Hash Table
 
 ```
 STAT hash_power_level 16
@@ -100,7 +100,7 @@ grapefruit shootermobile, you may like this option.
 Just examine the hash_power_level before restarting your instances, and adjust
 the startup command.
 
-=== expired_unfetched, evicted_unfetched ===
+#### expired_unfetched, evicted_unfetched
 
 The two stats represent items which expired and memory was reused, and valid
 items which were evicted, but never touched by get/incr/append/etc operations

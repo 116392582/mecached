@@ -10,12 +10,12 @@ http://memcached.googlecode.com/files/memcached-1.3.3.tar.gz
 
 ### Features
 
-=== Can set listen backlog on the commandline. ===
+#### Can set listen backlog on the commandline.
 
 Prevent connection refused during connection storms at the cost of
 kernel memory.
 
-=== stats settings ===
+#### stats settings
 
 Show all current server settings (useful for troubleshooting as well
 as internal verification).
@@ -39,7 +39,7 @@ as internal verification).
 
 ### Stable fixes from Dormando
 
-=== New Stats ===
+#### New Stats
 
 ==== accepting_conns ====
 
@@ -58,13 +58,13 @@ connection limit.
 
 The number of times the flush command was issued.
 
-=== missing key debugging ===
+#### missing key debugging
 
 With verbosity enabled, you can see *why* objects were not found.  In
 many cases, an item exists under a given key, but is considered
 invalid due to lazy expiration or flush.
 
-=== tail repair ===
+#### tail repair
 
 There is a rare, unidentified reference leak that causes a slab to be
 full of invalid objects that cannot be evicted via the LRU nor will
@@ -78,7 +78,7 @@ There is an additional stat that comes along with this (tailrepairs on
 a slab) that will allow you to detect that this condition has occurred
 on one of your slabs.
 
-=== socket listen bugs ===
+#### socket listen bugs
 
 There were some issues listening to sockets on machines with different
 network interface configurations (i.e. no network, only ipv4, only

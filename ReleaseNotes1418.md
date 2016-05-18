@@ -27,11 +27,11 @@ http://www.memcached.org/files/memcached-1.4.18.tar.gz
 
 ### New Features
 
-=== Stats conns ===
+#### Stats conns
 
 New "stats conns" command, which will show you what currently open connections are up to, how idle they've been, etc.
 
-=== Starttime Hash Algorithm Selection ===
+#### Starttime Hash Algorithm Selection
 
 The jenkins hash was getting a little long in the tooth, and we might want to
 add specific hash algorithms for different platforms in the future. This makes
@@ -40,7 +40,7 @@ and that seems to run a tiny bit faster in some tests.
 
 `-o hash_algorithm=murmur3`
 
-=== LRU Crawler ===
+#### LRU Crawler
 
 A new background thread emerges! Currently experimental, so the syntax might
 change. If you run into bugs please let us know (though it's been testing fine

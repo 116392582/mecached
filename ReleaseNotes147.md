@@ -32,7 +32,7 @@ from time travelers.
 
 ### New Features
 
-=== Montonic Clock ===
+#### Montonic Clock
 
 This isn't really a feature, but is the main change. If your system has
 clock_gettime with CLOCK_MONOTONIC support, memcached will attempt to use it.

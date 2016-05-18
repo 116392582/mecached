@@ -10,7 +10,7 @@ http://memcached.googlecode.com/files/memcached-1.4.0.tar.gz
 
 ### New Features
 
-=== Binary Protocol ===
+#### Binary Protocol
 
 A new feature that brings new features.  We now have goodness like
 CAS-everywhere (e.g. delete), silent, but verifiable mutation
@@ -46,7 +46,7 @@ Many clients for the binary protocol are available.
   http://cloud.github.com/downloads/memcached/memcached/protocol-binary.txt
 
 
-=== Performance ===
+#### Performance
 
 Lots of effort has gone into increasing performance.
 
@@ -73,7 +73,7 @@ use of CAS.  Running memcached with -C disables the use of CAS
 resulting in a savings of about eight bytes per item.  If you have big
 caches, and don't use CAS, this can lead to a considerable savings.
 
-=== Stats ===
+#### Stats
 
 There are several new stats and some new ways to look at older stats.
 
@@ -159,7 +159,7 @@ following stats are available on a per-slab-class basis (via "stats slabs"):
 If you depended on these commands for anything, please let us know so
 we may suggest alternatives for you.
 
-=== Misc ===
+#### Misc
 
   * More tests
   * More/better documentation

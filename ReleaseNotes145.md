@@ -28,12 +28,12 @@ one new stat.
 ### New Features
 
 
-=== New stat: reclaimed ===
+#### New stat: reclaimed
 This stat reports the number of times an entry was stored using memory
 from an expired entry.
 
 
-=== sasl_pwdb for more simple auth deployments ===
+#### sasl_pwdb for more simple auth deployments
 
 --enable-sasl-pwdb allows memcached to use it's own password file and
 verify a plaintext password.

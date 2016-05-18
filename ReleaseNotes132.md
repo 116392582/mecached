@@ -5,7 +5,7 @@ Date: 2009-03-11 Wed
 
 ### New Features
 
-=== Binary Protocol ===
+#### Binary Protocol
 
 A new feature that brings new features.  We now have goodness like
 CAS-everywhere (e.g. delete), silent, but verifiable mutation
@@ -72,7 +72,7 @@ caches, and don't use CAS, this can lead to a considerable savings.
 
 There are several new stats and some new ways to look at older stats.
 
-=== New Stats ===
+#### New Stats
 
 * Delete
 
@@ -115,7 +115,7 @@ There are several new stats and some new ways to look at older stats.
   you've got a problem.
 
 
-=== More Granular Stats ===
+#### More Granular Stats
 
 Where possible, stats are now tracked individually by slab class.  The
 following stats are available on a per-slab-class basis (via "stats slabs"):
@@ -130,7 +130,7 @@ following stats are available on a per-slab-class basis (via "stats slabs"):
 
 (misses are obviously not available as they refer to a non-existent item)
 
-=== Removed stats ===
+#### Removed stats
 
 "stats malloc" and "stats maps" have been removed.
 

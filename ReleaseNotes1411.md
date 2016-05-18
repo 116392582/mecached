@@ -33,12 +33,12 @@ the ability to rebalance and reassign slab memory.
 
 Slab page reassignment and bug fixes over 1.4.10.
 
-=== Bug Fixes ===
+#### Bug Fixes
 
 There were some race conditions and logic errors introduced in 1.4.10, they
 should be rare, but users are strongly encouraged to upgrade.
 
-=== Slab Reassign ===
+#### Slab Reassign
 
 Long running instances of memcached may run into an issue where all available
 memory has been assigned to a specific slab class (say items of roughly size
@@ -65,7 +65,7 @@ That will return an error code indicating success, or a need to retry later.
 Success does not mean that the slab was moved, but that a background thread
 will attempt to move the memory as quickly as it can.
 
-=== Slab Automove ===
+#### Slab Automove
 
 While slab reassign is a manual feature, there is also the start of an
 automatic memory reassignment algorithm.
@@ -94,7 +94,7 @@ It implements the same algorithm as built into memcached, and you may modify
 it to better suit your needs and improve on the script or port it to other
 languages. Please provide patches!
 
-=== Slab Reassign Implementation ===
+#### Slab Reassign Implementation
 
 Slab page reassignment requires some tradeoffs:
 
@@ -107,7 +107,7 @@ Slab page reassignment requires some tradeoffs:
 The first item will be improved in later releases, and is avoided if you start
 memcached without the -o slab_reassign option.
 
-=== New Stats ===
+#### New Stats
 
 ```
 STAT slab_reassign_running 0

@@ -14,13 +14,13 @@ This is a maintenance release consisting primarily of bug fixes.
 
 ### Fixes
 
-=== Critical Fixes ===
+#### Critical Fixes
 
   * Reject keys larger than 250 bytes in the binary protocol (bug94)
   * Bounds checking on stats cachedump (bug92)
   * Binary protocol set+cas wasn't returning a new cas ID (bug87)
 
-=== Non-critical Fixes ===
+#### Non-critical Fixes
 
   * Binary quitq didn't actually close the connection (bug84)
   * Build fix on CentOS 5 (bug88)
@@ -37,7 +37,7 @@ This is a maintenance release consisting primarily of bug fixes.
 
 ### New Features
 
-=== Support for libhugetlbfs (in Linux) ===
+#### Support for libhugetlbfs (in Linux)
 
 From http://libhugetlbfs.ozlabs.org/ -
 
@@ -50,12 +50,12 @@ change will make it available to you.  The hugetlbfs HOWTO provides
 detailed information on how to configure your Linux system and provide
 advice to applications (such as memcached) to make use of it.
 
-=== Support for evictions, evict_time and OOM counts in memcached-tool ===
+#### Support for evictions, evict_time and OOM counts in memcached-tool
 
 memcached-tool is a commandline tool to display information about your
 server.  It displays more now.
 
-=== Configurable maximum item size ===
+#### Configurable maximum item size
 
 Many people have asked for memcached to be able to store items larger
 than 1MB, while it's generally recommended that one _not_ do this, it
@@ -75,7 +75,7 @@ memcached -I 128k # Refuse items larger than 128k.
 memcached -I 10m  # Allow objects up to 10MB
 ```
 
-=== New stat: 'evicted_nonzero' ===
+#### New stat: 'evicted_nonzero'
 
 The evicted_nonzero stat is a counter of all of the evictions for
 items that had an expiration time greater than zero.
@@ -86,7 +86,7 @@ expiration, then they're naturally falling off the LRU as opposed to
 being evicted before their maximum expiry that was set at item store
 time.
 
-=== Protocol definitions for range protocol ===
+#### Protocol definitions for range protocol
 
 memcached ships with a binary protocol header that can be used when
 implementing your own protocol parsers and generators.  The structure

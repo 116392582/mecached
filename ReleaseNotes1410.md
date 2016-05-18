@@ -29,7 +29,7 @@ network card can support as of this writing.
 
 ### New Features
 
-=== Performance ===
+#### Performance
 
 For more details, read the commit messages from git. Each change was carefully
 researched to not increase memory requirements and to be safe from deadlocks.

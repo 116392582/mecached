@@ -16,7 +16,7 @@ common client issue as well as a few new stats.
 
 ### Fixes
 
-=== Add partial backwards compatibility for delete with timeout 0 ===
+#### Add partial backwards compatibility for delete with timeout 0
 
 Before version 1.4.0, there was an optional argument to delete that
 would allow a client to specify that a deleted object should exist in
@@ -35,7 +35,7 @@ they do not wish the item to linger.
 
 ### New Features
 
-=== New Stats ===
+#### New Stats
 
 ==== auth_enabled_sasl ====
 

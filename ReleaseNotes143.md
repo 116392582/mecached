@@ -13,18 +13,18 @@ http://memcached.googlecode.com/files/memcached-1.4.3.tar.gz
 This is a maintenance release of memcached featuring mostly bug fixes
 and one new feature.
 
-=== RC history ===
+#### RC history
 
 rc2 fixes a multiget bug that showed up in rc1.  A bug was not filed,
 but it was found and patched at roughly the same time.
 
 ### Fixes
 
-=== Critical Fixes ===
+#### Critical Fixes
 
   * Malicious input can crash server. bug102
 
-=== Non-critical Fixes ===
+#### Non-critical Fixes
 
   * Removed special case in slab sizing for factor 2. bug56
   * Provide better errors for deletion scenarios. bug3
@@ -36,7 +36,7 @@ but it was found and patched at roughly the same time.
   * Documentation fixes
   * Various build fixes
 
-=== Itemized List of Bugs Closed ===
+#### Itemized List of Bugs Closed
 
 If a bug shows up in this list that wasn't specifically mentioned
 above, it's either too minor to mention specifically or the bug was
@@ -60,7 +60,7 @@ does not exist.
 
 ### New Features
 
-=== Support for SASL Authentication ===
+#### Support for SASL Authentication
 
 Some installations of memcached are not in controlled environments
 where simple network filtering keeps bad guys out of your stuff.  To
@@ -69,7 +69,7 @@ You can read more about it here:
 
 https://github.com/memcached/memcached/wiki/SASLHowto
 
-=== New perl tool `damemtop` in scripts/ ===
+#### New perl tool `damemtop` in scripts/
 
 dormando's awesome memcached top - a new commandline perl tool for
 monitoring small to large memcached clusters. Supports monitoring
@@ -77,7 +77,7 @@ arbitrary statistics. See scripts/README.damemtop for more information.
 
 This tool is intended to replace memcached-tool, but not yet.
 
-=== Also Noteworthy, Slab Optimizations ===
+#### Also Noteworthy, Slab Optimizations
 
 Objects on the larger end of the limit should be generally more memory
 efficient now as more slabs are created (thus are more granular).

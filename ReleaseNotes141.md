@@ -14,14 +14,14 @@ This is a maintenance release consisting primarily of bug fixes.
 
 ### Fixes
 
-=== Criticial Fixes ===
+#### Criticial Fixes
 
   * Boundary condition during pipelined decoding caused crash (bug72)
   * Bad initialization during buffer realloc (bug77)
   * Buffer overrun in stats_prefix_find (bug79)
   * Memory corruption from negative and invalid item lengths (bug70)
 
-=== Non-critical Fixes ===
+#### Non-critical Fixes
 
   * Update flush stats for binary flushes (bug71)
   * Build fixes for OpenBSD

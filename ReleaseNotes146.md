@@ -45,7 +45,7 @@ fixed.
 
 ### New Features
 
-=== Multiple port binding ===
+#### Multiple port binding
 
 You may now specify multiple addresses by listing -l multiple times.
 

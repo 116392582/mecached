@@ -39,12 +39,12 @@ been removed, and you can move pages as fast as the system can ... move them.
 
 A few new features as well:
 
-=== slabs reassign ===
+#### slabs reassign
 
 `slabs reassign -1 15` will pick a page from any slab class and move it to
 class 15.
 
-=== slabs automove ===
+#### slabs automove
 
 `slabs automove 2` now enables an ultra aggressive page reassignment
 algorithm. On every eviction, it will try to move a slab page into that
