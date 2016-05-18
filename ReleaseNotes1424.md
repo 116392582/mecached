@@ -42,3 +42,4 @@ look at the output of `git log 1.4.23..1.4.24` or use a web view.
      3	dormando
 
 ```
+
