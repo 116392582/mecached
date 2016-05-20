@@ -19,6 +19,7 @@ Your friendly neighborhood memory cache daemon.
 
  * [[Install]]
  * [[TutorialCachingStory]]
+ * [[Hardware]]
 
 ### Configuration
 
