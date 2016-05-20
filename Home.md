@@ -23,6 +23,9 @@ Your friendly neighborhood memory cache daemon.
 
 ### Configuration
 
+ * [[ConfiguringServer]]
+ * [[ConfiguringClient]]
+
 ### Usage
 
  * [[Clients]]
