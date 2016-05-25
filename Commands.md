@@ -1,3 +1,28 @@
+## Contents
+
+- [Standard Protocol](#standard-protocol)
+    - [No Reply](#no-reply)
+- [Storage Commands](#storage-commands)
+    - [set](#set)
+    - [add](#add)
+    - [replace](#replace)
+    - [append](#append)
+    - [prepend](#prepend)
+    - [cas](#cas)
+- [Retrieval Commands](#retrieval-commands)
+    - [get](#get)
+    - [gets](#gets)
+- [delete](#delete)
+- [incr/decr](#incrdecr)
+- [Statistics](#statistics)
+    - [stats](#stats)
+    - [stats items](#stats-items)
+    - [stats slabs](#stats-slabs)
+    - [stats sizes](#stats-sizes)
+- [flush_all](#flushall)
+
+<!-- end toc -->
+
 Memcached handles a small number of basic commands.
 
 Full documentation can be found in the [[Protocol Documentation|NewProtocols]].
