@@ -92,7 +92,8 @@ General format of a packet:
 ## Defined Values
 
 ###  Magic Byte
-|
+| Byte | Meaning
+| --- | --- |
 |0x80|Request packet for this protocol version|
 |0x81|Response packet for this protocol version|
 |
