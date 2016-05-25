@@ -1,3 +1,24 @@
+## Contents
+
+- [Overview](#overview)
+- [General Properties of Range Commands](#general-properties-of-range-commands)
+    - [Abstract Representation of Ranges](#abstract-representation-of-ranges)
+    - [Binary Protocol Generalities](#binary-protocol-generalities)
+    - [Text Protocol Generalities](#text-protocol-generalities)
+- [Supported commands](#supported-commands)
+    - [get](#get)
+    - [set](#set)
+    - [append](#append)
+    - [prepend](#prepend)
+    - [delete](#delete)
+    - [incr](#incr)
+    - [decr](#decr)
+    - [replace (omitted)](#replace-omitted)
+- [Command Reference](#command-reference)
+- [Isolation](#isolation)
+
+<!-- end toc -->
+
 ## Overview
 
 Several implementations of servers speaking the memcached protocol
