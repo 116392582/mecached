@@ -18,8 +18,8 @@ Your friendly neighborhood memory cache daemon.
 ### Getting Started
 
  * [[Install]]
- * [[TutorialCachingStory]]
- * [[Hardware]]
+ * [[Tutorial (in fun story form!)|TutorialCachingStory]]
+ * [[Hardware Recommendations|Hardware]]
 
 ### Configuration
 
