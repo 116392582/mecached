@@ -96,7 +96,6 @@ General format of a packet:
 | --- | --- |
 |0x80|Request packet for this protocol version|
 |0x81|Response packet for this protocol version|
-|
 
 Magic byte / version. For each version of the protocol, we'll use a different request/response value pair. This is useful for protocol analyzers to distinguish the nature of the packet from the direction which it is moving. Note, it is common to run a memcached instance on a host that also runs an application server. Such a host will both send and receive memcache packets.
 
@@ -108,7 +107,8 @@ Traffic analysis tools are encouraged to identify memcache packets and provide d
 
 Possible values of this two-byte field:
 
-|
+| Byte | Meaning
+| --- | --- |
 0x0000 | No error |
 0x0001 | Key not found |
 0x0002 | Key exists |
@@ -125,13 +125,13 @@ Possible values of this two-byte field:
 0x0084 | Internal error |
 0x0085 | Busy |
 0x0086 | Temporary failure |
-|
 
 ### Command Opcodes
 
 Possible values of the one-byte field. See [BinaryProtocolRevamped#Commands] for more information about a given command.
 
-|
+| Byte | Meaning
+| --- | --- |
 0x00 | Get |
 0x01 | Set |
 0x02 | Add |
@@ -190,7 +190,6 @@ Possible values of the one-byte field. See [BinaryProtocolRevamped#Commands] for
 0x45 | TAP VBucket Set *|
 0x46 | TAP Checkpoint Start *|
 0x47 | TAP Checkpoint End *|
-|
 
 Commands marked with * is not currently fixed, but this is the current proposal for 1.6.
 
@@ -201,9 +200,9 @@ As a convention all of the commands ending with "Q" for Quiet. A quiet version o
 
 Possible values of the one-byte field:
 
-|
+| Byte | Meaning
+| --- | --- |
 0x00 | Raw bytes |
-|
 
 ## Commands
 
@@ -1237,37 +1236,6 @@ Request:
 ```
 
 Touch is used to set a new expiration time for an existing item. GAT (Get and touch) and GATQ will return the value for the object if it is present in the cache.
-
-#### Example
-
-
-```
-@todo add me
-```
-
-==Get/Set/Del VBucket==
-
-@todo add me
-
-==TAP Connect==
-
-@todo add me
-
-==TAP Mutation / Delete / Flush==
-
-@todo add me
-
-==TAP Opaque==
-
-@todo add me
-
-== TAP VBucket set==
-
-@todo add me
-
-== TAP Checkpoint start/stop==
-
-@todo add me
 
 ## Security Considerations
 
