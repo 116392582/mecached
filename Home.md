@@ -29,6 +29,7 @@ Your friendly neighborhood memory cache daemon.
 ### Usage
 
  * [[Clients]]
+ * [[Commands]]
 
 ### Maintenance
 
