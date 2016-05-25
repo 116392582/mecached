@@ -1,10 +1,10 @@
 Memcached supports two main protocols; the classic ASCII, and the newer binary. It's simpler to write clients and debug problems via the ASCII protocol, but binary affords us many new abilities.
 
  * [Text Protocol](http://github.com/memcached/memcached/blob/master/doc/protocol.txt)
- * [[BinaryProtocolRevamped|Binary Protocol]]
+ * [[Binary Protocol|BinaryProtocolRevamped]]
    * [Slides on binary protocol ](http://www.slideshare.net/tmaesaka/memcached-binary-protocol-in-a-nutshell-presentation/) by Toru Maesaka (2008)
 
 Further, there are sub protocols and proposals
 
- * [[SASLAuthProtocol|SASL Authentication]]
- * [[RangeOps|Range operations]] - Not to be supported in core, but defined for storage engines and compatible clients.
+ * [[SASL Authentication|SASLAuthProtocol]]
+ * [[Range operations|RangeOps]] - Not to be supported in core, but defined for storage engines and compatible clients.
