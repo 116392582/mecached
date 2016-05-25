@@ -1,3 +1,35 @@
+## Contents
+
+- [Introduction](#introduction)
+    - [Conventions Used In This Document](#conventions-used-in-this-document)
+- [Packet Structure](#packet-structure)
+    - [Request header](#request-header)
+    - [Response header](#response-header)
+    - [Header fields description](#header-fields-description)
+- [Defined Values](#defined-values)
+    - [ Magic Byte](#magic-byte)
+    - [Response Status](#response-status)
+    - [Command Opcodes](#command-opcodes)
+    - [Data Types](#data-types)
+- [Commands](#commands)
+    - [Introduction](#introduction)
+    - [Get, Get Quietly, Get Key, Get Key Quietly](#get-get-quietly-get-key-get-key-quietly)
+    - [Set, Add, Replace](#set-add-replace)
+    - [Delete](#delete)
+    - [Increment, Decrement](#increment-decrement)
+    - [quit](#quit)
+    - [Flush](#flush)
+    - [noop](#noop)
+    - [version](#version)
+    - [Append, Prepend](#append-prepend)
+    - [Stat](#stat)
+    - [Verbosity](#verbosity)
+    - [Touch, GAT and GATQ](#touch-gat-and-gatq)
+- [Security Considerations](#security-considerations)
+- [Normative References](#normative-references)
+
+<!-- end toc -->
+
 ## Introduction
 
 Memcache is a high performance key-value cache. It is intentionally a dumb cache, optimized for speed only. Applications using memcache should not rely on it for data -- a persistent database with guaranteed reliability is strongly recommended -- but applications can run much faster when cached data is available in memcache.
