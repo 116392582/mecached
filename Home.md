@@ -7,7 +7,7 @@ Your friendly neighborhood memory cache daemon.
 ### About
 
  * [[Overview]]
- * [[ReleaseNotes]]
+ * [[Release Notes|ReleaseNotes]]
 
 * Communication
  * [Mailing List](http://groups.google.com/group/memcached)
@@ -17,14 +17,14 @@ Your friendly neighborhood memory cache daemon.
 
 ### Getting Started
 
- * [[Install]]
+ * [[Installing|Install]]
  * [[Tutorial (in fun story form!)|TutorialCachingStory]]
  * [[Hardware Recommendations|Hardware]]
 
 ### Configuration
 
- * [[ConfiguringServer]]
- * [[ConfiguringClient]]
+ * [[Configuring a Server|ConfiguringServer]]
+ * [[Configuring a Client|ConfiguringClient]]
 
 ### Usage
 
