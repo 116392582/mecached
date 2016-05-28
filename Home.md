@@ -31,6 +31,10 @@ Your friendly neighborhood memory cache daemon.
  * [[Clients]]
  * [[API Commands|Commands]]
  * [[Common Client Features|CommonFeatures]]
+ * [[Programming With Memcached Basics|NewProgramming]]
+ * [[Memcached Usage FAQ|ProgrammingFAQ]]
+ * [[HOWTO's and Tricks|ProgrammingTricks]]
+ * [[Memcached Internals for End Users|UserInternals]]
 
 ### Maintenance
 
