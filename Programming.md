@@ -212,7 +212,7 @@ A good place to start is to tune your expiration times. Even if you're actively 
 
 There isn't a "rule of thumb" when picking an expiration time. Sit back and think about your users, and what your data is. How long can you go without making your users angry? Be honest with yourself, as "THEY _ALWAYS_ NEED FRESH DATA" isn't necessarily true.
 
-Expiration times can be set from `0`, meaning "never expire", to 30 days. Any time higher than 30 days is interpreted as a unix timestamp date. If you want to expire an object on january 1st of next year, this is how you do that.
+Expiration times are specified in integer seconds. They can be set from `0`, meaning "never expire", to 30 days (60*60*24*30). Any time higher than 30 days is interpreted as a unix timestamp date. If you want to expire an object on january 1st of next year, this is how you do that.
 
 ### `delete`
 
