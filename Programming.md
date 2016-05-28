@@ -214,6 +214,9 @@ There isn't a "rule of thumb" when picking an expiration time. Sit back and thin
 
 Expiration times are specified in unsigned integer seconds. They can be set from `0`, meaning "never expire", to 30 days (60*60*24*30). Any time higher than 30 days is interpreted as a unix timestamp date. If you want to expire an object on january 1st of next year, this is how you do that.
 
+For binary protocol an expiration must be unsigned. If a negative expiration
+is given to the ASCII protocol, it is treated it as "expire immediately".
+
 ### `delete`
 
 The simplest method of invalidation is to simply delete it, and have your website re-cache the data next time it's fetched.

@@ -33,7 +33,7 @@ The "standard protocol stuff" of memcached involves running a command against an
 
  * A key (arbitrary string up to 250 bytes in length. No space or newlines for ASCII mode)
  * A 32bit "flag" value
- * An expiration time, in seconds (unsigned int). Can be up to 30 days. After 30 days, is treated as a unix timestamp of an exact date.
+ * An expiration time, in seconds. '0' means never expire. Can be up to 30 days. After 30 days, is treated as a unix timestamp of an exact date.
  * A 64bit "CAS" value, which is kept unique.
  * Arbitrary data
 
