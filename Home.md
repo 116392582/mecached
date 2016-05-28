@@ -41,6 +41,7 @@ Your friendly neighborhood memory cache daemon.
  * [[Maintaining a Server|ServerMaint]]
  * [[Maintaining a Cluster|ClusterMaint]]
  * [[What Performance To Expect|Performance]]
+ * [[Troubleshooting Timeouts|Timeouts]]
 
 ### Development
 
