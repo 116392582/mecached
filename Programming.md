@@ -1,19 +1,25 @@
 ## Contents
 
-    - [Basic Data Caching](#basic-data-caching)
-- [perl](#perl)
-- [pseudocode](#pseudocode)
-- [Don't load little bobby tables](#dont-load-little-bobby-tables)
-- [We check if the value is 'defined', since '0' or 'FALSE' # can be ](#we-check-if-the-value-is-defined-since-0-or-false-can-be)
-- [legitimate values!](#legitimate-values)
-- [Lets generate a bio page!](#lets-generate-a-bio-page)
-    - [Extended Functions](#extended-functions)
-- [There can be only one](#there-can-be-only-one)
-- [Got a hit!](#got-a-hit)
-    - [Cache Invalidation](#cache-invalidation)
-    - [Key Usage](#key-usage)
+- [Basic Data Caching](#basic-data-caching)
+    - [Initializing a Memcached Client](#initializing-a-memcached-client)
+    - [Wrapping an SQL Query](#wrapping-an-sql-query)
+    - [Wrapping Several Queries](#wrapping-several-queries)
+    - [Wrapping Objects](#wrapping-objects)
+    - [Fragment Caching](#fragment-caching)
+- [Extended Functions](#extended-functions)
+    - [Proper Use of `add`](#proper-use-of-add)
+    - [Proper Use of `incr` or `decr](#proper-use-of-incr-or-decr)
+- [Cache Invalidation](#cache-invalidation)
+    - [Expiration](#expiration)
+    - [`delete`](#delete)
+    - [`set`](#set)
+    - [Invalidating by Tag](#invalidating-by-tag)
+- [Key Usage](#key-usage)
+    - [Avoid User Input](#avoid-user-input)
+    - [Short Keys](#short-keys)
+    - [Informative Keys](#informative-keys)
 
-<!-- end toc -->
+<!-- end toc 3 -->
 
 This basic tutorial shows via pseudocode how you can get started with integrating memcached into your application. If you're an application developer, it isn't something you just "turn on" and then your site goes faster. You have to pay attention.
 
@@ -28,12 +34,12 @@ The "hello world" of memcached is to fetch "something" from somewhere, maybe pro
 Read the documentation carefully for your client.
 
 ```
-# perl
+ # perl
 my $memclient = Cache::Memcached->new({ servers => [ '10.0.0.10:11211', '10.0.0.11:11211' ]});
 ```
 
 ```
-# pseudocode
+ # pseudocode
 memcli = new Memcache
 memcli:add_server('10.0.0.10:11211')
 ```
@@ -45,11 +51,11 @@ Some rare clients will allow you add the same servers over and over again, witho
 Memcached is famous for reducing load on SQL databases. Unlike a query cache which can be centralized, implemented in slow middleware, or mass invalidated, you can easily get yourself moving by caching query results.
 
 ```
-# Don't load little bobby tables
+ # Don't load little bobby tables
 sql = "SELECT * FROM user WHERE user_id = ?"
 key = 'SQL:' . user_id . ':' . md5sum(sql)
-# We check if the value is 'defined', since '0' or 'FALSE' # can be 
-# legitimate values!
+ # We check if the value is 'defined', since '0' or 'FALSE' # can be
+ # legitimate values!
 if (defined result = memcli:get(key)) {
 	return result
 } else {
@@ -109,7 +115,7 @@ Once upon a time ESI (Edge Side Includes) were all the rage. Sadly they require 
 Memcached isn't just all about preventing database queries. You can cache computed items or objects as well.
 
 ```
-# Lets generate a bio page!
+ # Lets generate a bio page!
 user          = fetch_user_info(user_id)
 bio_template  = fetch_biotheme_for(user_id)
 page_template = fetch_page_theme
@@ -148,7 +154,7 @@ Beyond 'set', there are add, incr, decr, etc. They are simple commands but requi
 `add` allows you to set a value if it doesn't already exist. You use this when initializing counters, setting locks, or otherwise setting data you don't want overwritten as easily. There can be some odd little gotchas and race conditions in handling of `add` however.
 
 ```
-# There can be only one
+ # There can be only one
 key = "the_highlander"
 real_highlander = memcli:get(key)
 if (! real_highlander) {
