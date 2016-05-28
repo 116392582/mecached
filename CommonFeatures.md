@@ -1,5 +1,6 @@
 ## Contents
 
+- [Common Features](#common-features)
     - [Hashing](#hashing)
     - [Consistent Hashing](#consistent-hashing)
     - [Storing Binary Data or Strings](#storing-binary-data-or-strings)
@@ -15,6 +16,8 @@
     - [Multi-Set](#multiset)
 
 <!-- end toc -->
+
+## Common Features
 
 Clients have a set of common features that they share. The intent here is to give you an overview of how typical clients behave, and some helpful features to look for.
 
