@@ -4,7 +4,7 @@ Date: 2016-6-17
 
 ### Download
 
-http://www.memcached.org/files/memcached-1.4.26.tar.gz
+https://www.memcached.org/files/memcached-1.4.26.tar.gz
 
 ### Overview
 
