@@ -79,7 +79,7 @@ Thread stats cumulative		11376
 
 Items are evicted if they have not expired (an expiration time of 0 or some time in the future), the slab class is completely out of free chunks, and there are no free pages to assign to a slab class.
 
-== How the LRU Decides What to Evict ===
+#### How the LRU Decides What to Evict
 
 Memory is also reclaimed when it's time to store a new item. If there are no free chunks, and no free pages in the appropriate slab class, memcached will look at the end of the LRU for an item to "reclaim". It will search the last few items in the tail for one which has already been expired, and is thus free for reuse. If it cannot find an expired item however, it will "evict" one which has not yet expired. This is then noted in several statistical counters.
 
