@@ -64,6 +64,8 @@ Memcached is, by default, a Least Recently Used cache. Items expire after a spec
 
 No "pauses" waiting for a garbage collector ensures low latency, and free space is lazily reclaimed.
 
+See [LRU documentation](https://github.com/memcached/memcached/blob/master/doc/new_lru.txt) for more details on the latest algorithm.
+
 ### Cache Invalidation
 
 Rather than broadcasting changes to all available hosts, clients directly address the server holding the data to be invalidated.
