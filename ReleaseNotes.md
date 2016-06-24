@@ -1,4 +1,5 @@
 ### Releases
+ * [[ReleaseNotes1427]] 1.4.27 (2016-6-24)
  * [[ReleaseNotes1426]] 1.4.26 (2016-6-17)
  * [[ReleaseNotes1425]] 1.4.25 (2015-11-19)
  * [[ReleaseNotes1424]] 1.4.24 (2015-4-24)
