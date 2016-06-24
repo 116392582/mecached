@@ -27,7 +27,7 @@
  * [[ReleaseNotes141]] 1.4.1 (August 29th, 2009)
  * [[ReleaseNotes140]] 1.4.0 (July 9th, 2009)
 
-== Notes for Old Releases ==
+### Notes for Old Releases
  * [[ReleaseNotes127]] 1.2.7 (April 3, 2009)
  * [[ReleaseNotes128]] 1.2.8 (April 11, 2009)
 
