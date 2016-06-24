@@ -59,6 +59,10 @@ Now, the process is dynamic, tallying sizes as items are added to or removed
 from the cache. It must be enabled at starttime via `-o track_sizes`, or
 dynamically via `stats sizes_enable` and `stats sizes_disable` ascii commands.
 
+If you have item sizes that are very static, or align very poorly by using the
+`-f` feature, you can now specify the exact sizes of the slab classes via
+commands like `-o slab_sizes=100-200-300-400-500`.
+
 ### Contributors
 
 The following people contributed to this release since 1.4.26.
