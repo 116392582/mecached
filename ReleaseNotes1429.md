@@ -14,6 +14,10 @@ handful of features.
 Large items now have much better memory efficiency, and can get very large
 (potentially hundreds of megabytes) safely.
 
+Many thanks to https://www.packet.net/ for providing high speed baremetal
+hardware which was used for performance and burn-in testing of this new
+feature.
+
 ### Fixes
 
   * fix items with a "0" hash result from failing to evict sometimes.
