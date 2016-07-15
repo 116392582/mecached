@@ -38,7 +38,7 @@ can now safely raise above that. Up to hundreds of megabytes, potentially.
 This feature automatically enables if you raise the item size limit above 1mb.
 IE: `-I 2m`.
 
-You can also enable it manually with a limit of 1mb (the default of `-I 1m`) or 
+You can also enable it manually with a limit of 1mb (the default of `-I 1m`) or
 less (like `-I 512k`) by setting `-o slab_chunk_max=16384`
 (16384 is the recommended default).
 
