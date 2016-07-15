@@ -14,6 +14,10 @@ handful of features.
 Large items now have much better memory efficiency, and can get very large
 (potentially hundreds of megabytes) safely.
 
+To make use of the new feature, simply use the `-I` option as before, IE:
+
+`-I 2m`
+
 Many thanks to https://www.packet.net/ for providing high speed baremetal
 hardware which was used for performance and burn-in testing of this new
 feature.
@@ -32,8 +36,11 @@ After over a decade of having an item size target of a single megabyte, items
 can now safely raise above that. Up to hundreds of megabytes, potentially.
 
 This feature automatically enables if you raise the item size limit above 1mb.
-You can also enable it manually with a limit of 1mb or less by setting `-o
-slab_chunk_max=16384` (16384 is the recommended default).
+IE: `-I 2m`.
+
+You can also enable it manually with a limit of 1mb (the default of `-I 1m`) or 
+less (like `-I 512k`) by setting `-o slab_chunk_max=16384`
+(16384 is the recommended default).
 
 Full details in the pull request:
 https://github.com/memcached/memcached/pull/181
