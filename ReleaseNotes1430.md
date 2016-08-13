@@ -29,7 +29,7 @@ then only using 1mb. This would lead to it hitting the malloc limit with only
 from 1MB.
 
 If you are still seeing issues with memory efficiency with large item support
-(`-I` set higher than 1m default), try the startup setting: `-o slab_chunk_max=1048576`
+(`-I` set higher than 1m default), try the startup setting: `-o slab_chunk_max=524288`
 Most workloads will function fine, and it should nearly always be better than
 how memory efficiency worked prior to the new feature (when using large
 items).
