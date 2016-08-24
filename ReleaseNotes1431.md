@@ -8,7 +8,7 @@ http://www.memcached.org/files/memcached-1.4.31.tar.gz
 
 ### Overview
 
-Big new feature: `stats metadump all`, will now dump (most of) the metadata
+Big new feature: `lru_crawler metadump all`, will now dump (most of) the metadata
 for (all of) the items in the cache. As opposed to cachedump, it does not
 cause severe performance problems and has no limits on the amount of keys that
 can be dumped.
@@ -23,7 +23,7 @@ can be dumped.
 ### New Features
 
 If `-o modern` is in use (or at least `-o lru_crawler`), a new command is
-usable: `stats metadump [all|1|2|3]`. You may dump all of the metadata for a
+usable: `lru_crawler metadump [all|1|2|3]`. You may dump all of the metadata for a
 particular slab class, a list of slab classes, or all slab classes.
 
 This is useful for inspection, pulling cache data from one server to another,
