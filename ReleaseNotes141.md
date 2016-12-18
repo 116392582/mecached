@@ -6,7 +6,7 @@ Date: 2009-08-29 Sat
 
 Download Link:
 
-http://memcached.googlecode.com/files/memcached-1.4.1.tar.gz
+http://memcached.org/files/old/memcached-1.4.1.tar.gz
 
 ### Overview
 

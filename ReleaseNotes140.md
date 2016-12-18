@@ -6,7 +6,7 @@ Date:  Thu July 9, 2009
 
 Download Link:
 
-http://memcached.googlecode.com/files/memcached-1.4.0.tar.gz
+http://memcached.org/files/old/memcached-1.4.0.tar.gz
 
 ### New Features
 

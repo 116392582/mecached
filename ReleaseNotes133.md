@@ -6,7 +6,7 @@ Date: 2009-04-03 Fri
 
 Download link:
 
-http://memcached.googlecode.com/files/memcached-1.3.3.tar.gz
+http://memcached.org/files/old/memcached-1.3.3.tar.gz
 
 ### Features
 

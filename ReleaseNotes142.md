@@ -6,7 +6,7 @@ Date: 2009-10-11 Sun
 
 Download Link:
 
-http://memcached.googlecode.com/files/memcached-1.4.2.tar.gz
+http://memcached.org/files/old/memcached-1.4.2.tar.gz
 
 ### Overview
 
