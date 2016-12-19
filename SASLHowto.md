@@ -1,6 +1,11 @@
 ## Introduction
 
-In order to use memcached in a hostile network (e.g. a cloudy ISP where the infrastructure is shared and you can't control it), you're going to want some kind of way to keep people from messing with your cache servers.
+If running memcached in a mostly trusted network; such as within a cloud or a
+corporate internal cloud, you might want to restrict access to the service.
+
+SASL is not implemented as end-ot-end encryption. While this allow safely
+restricting access to the daemon, it does not hide communications and isn't
+suitable for using over the internet.
 
 [SASL](http://en.wikipedia.org/wiki/Simple_Authentication_and_Security_Layer) (as described in [RFC2222](http://tools.ietf.org/html/rfc2222)) is a standard for adding authentication mechanisms to protocols in a way that is protocol independent.
 

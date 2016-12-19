@@ -20,6 +20,10 @@ discriminate against them.
 There are cases, however, where memcached is deployed in untrusted
 networks or where administrators would like to exercise a bit more
 control over the clients that are connecting.
+
+This does not provide encryption, but can provide authentication. Do not run
+this over the internet large, do use this to protect from neighbors and
+accidents from within large mostly trusted networks.
  
 This page mostly exists to describe the protocol.  If you just want to use it, check out the [[SASL howto|SASLHowto]]
 
